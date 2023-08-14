@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-yasm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-wlct-tenant/mc-quality-dashboard/frontend-quality-dashboard-yasm@sha256:5c11ec293a97638b46e8717e4c296fb3386a3afac8993d80ddfce8daebbdcade
+        name: container-image
+        resources: {}
+status: {}
